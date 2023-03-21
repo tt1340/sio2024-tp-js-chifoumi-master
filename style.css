@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,700&family=PT+Sans&display=swap");
+
+body {
+  background-color: #17183b;
+  overflow: hidden;
+}
+
+.container-main {
+  width: 40vw;
+  height: 70vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+h1 {
+  size: 3em;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bolder;
+  color: #ffb49a;
+}
+
+.container-statut {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.container-statut h1 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 5em;
+  margin-bottom: auto;
+  color: #ff4f79;
+}
+
+.container-boutons {
+  grid-row-start: 2;
+  grid-column: 1 / span 3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+button {
+  margin-top: auto;
+  color: #a11692;
+  margin: 0;
+  background-color: #ffb49a;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 0px;
+  padding: 1.5em 3em;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 2em;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-left: 1em;
+}
+
+button:hover,
+button:active {
+  border: 5px solid #ff4f79;
+  border-radius: 4%;
+}
+
+.container-coups-joues {
+  grid-row-start: 3;
+  grid-column: 1 / span 3;
+  color: #ff4f79;
+  font-family: "PT Sans", sans-serif;
+  font-size: 2em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.container-score {
+  grid-row-start: 4;
+  grid-column: 2 / span 2;
+  color: #ffb49a;
+  font-family: "PT Sans", sans-serif;
+  font-size: 2em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+@media (max-width: 1000px) {
+  .container-main {
+    width: 80vw;
+  }
+}
