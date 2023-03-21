@@ -1,5 +1,5 @@
 let statutJeu = document.querySelector("#statut-jeu");
-let coups = ["PIERRE", "PIERRE", "CISEAUX"]
+let coups = ["PIERRE", "FEUILLE", "CISEAUX"]
 let boutons = document.querySelectorAll("button");
 
 
@@ -14,7 +14,9 @@ let affichageCoupsJoues = document.querySelectorAll(
 for (let i = 0; i < 3; i++) {
     boutons[i].textContent = coups[i];
 }
-
+boutons.forEach((btn, index) => {
+    btn.textContent = coups[index];
+});
 // La suite du script constitue en la définition des fonctions utilisées dans le jeu
 
 /**
